@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYS Tharbiya Camp | Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4;
+        }
+
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(6, 95, 70, 0.85), rgba(6, 95, 70, 0.95)), 
+                              url('https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Custom scrollbar for the iframe container */
+        .iframe-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        .iframe-container::-webkit-scrollbar-thumb {
+            background-color: #d1d5db;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+
+    <!-- Header / Hero Section -->
+    <div class="w-full hero-bg text-white py-14 px-6 text-center shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-block bg-green-500/30 backdrop-blur-md border border-green-400/30 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+                SYS Pallikkara Circle Presents
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Tharbiya Camp</h1>
+            <p class="text-lg md:text-xl font-light text-green-100/80 max-w-2xl mx-auto">
+                A spiritual journey for personal growth and community bonding.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="w-full max-w-2xl px-4 -mt-12 mb-12">
+        <div class="glass-morphism rounded-[2rem] shadow-2xl overflow-hidden border border-white">
+            
+            <!-- Quick Info Bar -->
+            <div class="grid grid-cols-2 divide-x divide-gray-100 bg-white/50 border-b border-gray-100">
+                <div class="p-5 text-center">
+                    <div class="w-10 h-10 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Location</p>
+                    <p class="text-sm font-bold text-gray-800">Hasanabad Chettkund</p>
+                </div>
+                <div class="p-5 text-center">
+                    <div class="w-10 h-10 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <i class="fa-solid fa-calendar-day"></i>
+                    </div>
+                    <p class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Schedule</p>
+                    <p class="text-sm font-bold text-gray-800">Tue 6PM - Wed 8AM</p>
+                </div>
+            </div>
+
+            <!-- Google Form Iframe Container -->
+            <div class="p-4 md:p-6 bg-white">
+                <div class="mb-4 text-center">
+                    <h3 class="text-xl font-bold text-gray-800">Registration Form</h3>
+                    <p class="text-gray-500 text-xs">Fill in the official Google Form below to register.</p>
+                </div>
+
+                <div class="iframe-container w-full rounded-xl overflow-hidden border border-gray-100 bg-gray-50" style="height: 720px;">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfNCqVhH-4JCxxgfy7dyRlLinmfYFTAGGAKU3xl2aaDniiciQ/viewform?embedded=true" 
+                        width="100%" 
+                        height="720" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        class="w-full">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Reminder Box -->
+            <div class="p-6 bg-green-50 border-t border-green-100">
+                <div class="flex items-start gap-3 text-left">
+                    <i class="fa-solid fa-circle-info text-green-600 mt-1"></i>
+                    <div>
+                        <p class="text-xs font-bold text-green-800 uppercase tracking-wider">Important Note</p>
+                        <p class="text-xs text-green-700 mt-1">Please ensure you click the <b>Submit</b> button inside the form above. You will receive a confirmation message once submitted.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center">
+            <p class="text-gray-400 text-xs font-medium tracking-widest uppercase">SYS Pallikkara Circle</p>
+            <div class="flex justify-center gap-4 mt-4 text-gray-300">
+                <i class="fa-brands fa-facebook-f hover:text-green-600 transition-colors"></i>
+                <i class="fa-brands fa-instagram hover:text-green-600 transition-colors"></i>
+                <i class="fa-brands fa-whatsapp hover:text-green-600 transition-colors"></i>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
